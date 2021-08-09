@@ -67,7 +67,6 @@ def slack_notify(event):
                     "author_link": f"https://{SLACK_WORKSPACE_DOMAIN}/team/{user_info['user']['id']}",
                     "author_icon": user_info['user']['profile']['image_72'],
                     "title": f"#{channel_info['channel']['name']}で以下のスレッドが盛り上がってます !!!",
-                    "title_link": notify_thread_url,
                     "text": f"{thread['data']['messages'][0]['text']}\n\n<{notify_thread_url}|:point_right: スレッドを見に行く！！>",
                     "image_url": random.choice(config.attachment_images),
                     "footer": config.attachment_footer_text,
