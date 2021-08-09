@@ -31,3 +31,5 @@ attachment_images = [
 ]
 
 attachment_footer_image = "https://user-images.githubusercontent.com/50162453/128659878-fce5df1d-6b3a-46b2-8539-2d68ebf9d7cd.png"
+
+attachment_footer_text = "Send from Exciting thread recommender"

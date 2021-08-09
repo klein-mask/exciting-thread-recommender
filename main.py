@@ -70,7 +70,7 @@ def slack_notify(event):
                     "title_link": notify_thread_url,
                     "text": f"{thread['data']['messages'][0]['text']}\n\n<{notify_thread_url}|:point_right: スレッドを見に行く！！>",
                     "image_url": random.choice(config.attachment_images),
-                    "footer": f"Send from Exciting thread teacher",
+                    "footer": config.attachment_footer_text,
                     "footer_icon": config.attachment_footer_image,
                     "ts": thread['data']['messages'][0]['ts']
                 }
